@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background: #EEAECA;
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            font-family: Cambria,'Times New Roman';
+            text-align: center;
+        }
+        h1{
+            padding: 10px;
+            font-size: 60px;
+        }
+        .box{
+            background: white;
+            width: 600px;
+            margin: 40px auto;
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgb(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header><center><h1>CALCULATOR</h1></center></header>
+    <div class="box">
+        <input id="num1" placeholder="Enter First Number"><br>
+        <input id="num2" placeholder="Enter Second Number"><br>
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+    <p id="output"></p>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
