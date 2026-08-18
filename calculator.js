@@ -11,6 +11,7 @@ function add() {
     document.getElementById("output").innerHTML =
         "<h2>Sum : " + ans + "</h2>";
 }
+
 function sub() {
     let a = parseFloat(document.getElementById("num1").value);
     let b = parseFloat(document.getElementById("num2").value);
