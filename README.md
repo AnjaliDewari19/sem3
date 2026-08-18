@@ -1,2 +1,5 @@
-# sem3
+# Semester : 3
 AUTHOR : ANJALI DEWARI
+ ##
+ ~ Calculator <br>
+ ~ Student Dashboard
