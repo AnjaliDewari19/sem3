@@ -28,4 +28,12 @@ This repository contains all academic materials, coursework, assignments, projec
    - Folder: `experiments/exp1/`
 
 ---
-
+2. **Experiment 2: CRUD Operation**
+   - Perform CRUD operations on files using fs module
+   - Folder: `experiments/fs module/`
+  
+---
+3. **Experiment 3: HTTP server**
+   - Create a basic HTTP server using http.createServer()
+   - Respond with “Hello World” and return headers + status code    
+   - Folder: `experiments/exp3/`
