@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+    <div class="result-box">
+        <h1>QUIZ RESULT</h1>
+        <div class="student-info">
+
+            <p>
+                <b>Name:</b>
+                <span id="studentName"></span>
+            </p>
+
+            <p>
+                <b>Roll Number:</b>
+                <span id="rollNumber"></span>
+            </p>
+
+            <p>
+                <b>Section:</b>
+                <span id="section"></span>
+            </p>
+
+        </div>
+        <hr>
+
+        <h2>Your Score</h2>
+        <div class="score">
+            <span id="score"></span> / 10
+        </div>
+
+        <h2>Grade</h2>
+        <div id="grade" class="grade"></div>
+        <button onclick="goHome()">
+            BACK TO HOME
+        </button>
+
+    </div>
+
+    <script>
+        let name =
+            localStorage.getItem("studentName");
+        let roll =
+            localStorage.getItem("rollNumber");
+        let section =
+            localStorage.getItem("section");
+        let score =
+            Number(localStorage.getItem("score"));
+        document.getElementById("studentName").innerText = name;
+        document.getElementById("rollNumber").innerText = roll;
+        document.getElementById("section").innerText = section;
+        document.getElementById("score").innerText = score;
+
+
+        let grade;
+        if (score >= 9) {
+            grade = "A+";
+        } else if (score >= 8) {
+            grade = "A";
+        } else if (score >= 7) {
+            grade = "B+";
+        } else if (score >= 6) {
+            grade = "B";
+        } else if (score >= 5) {
+            grade = "C";
+        } else {
+            grade = "F";
+        }
+
+        document.getElementById("grade").innerText = grade;
+        function goHome() {
+            window.location.href = "main.html";
+        }
+    </script>
+
+</body>
+</html>

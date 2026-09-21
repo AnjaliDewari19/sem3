@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h2>WEB DESIGNING QUIZ 1</h2>
+
+        <form id="studentForm">
+
+            <center>
+
+                <input type="text"
+                       id="name"
+                       class="imp"
+                       placeholder="NAME"
+                       required>
+                <br>
+
+                <input type="number"
+                       id="roll"
+                       class="imp"
+                       placeholder="ROLL NUMBER"
+                       required>
+                <br>
+
+            </center>
+
+            <p style="font-size: 30px;">Section :</p>
+
+            <div class="sections">
+
+            <input type="radio" id="A" name="section" value="A" required>
+            <label for="A">A</label>
+
+            <input type="radio" id="B" name="section" value="B">
+            <label for="B">B</label>
+
+            <input type="radio" id="C" name="section" value="C">
+            <label for="C">C</label>
+
+        </div>
+
+    <br><br>
+
+    <button type="submit">START QUIZ</button>
+
+        </form>
+
+    </div>
+
+    <script>
+        document.getElementById("studentForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let roll = document.getElementById("roll").value;
+            let section = document.querySelector('input[name="section"]:checked').value;
+
+            localStorage.setItem("studentName", name);
+            localStorage.setItem("rollNumber", roll);
+            localStorage.setItem("section", section);
+
+            window.location.href = "quiz.html";
+        });
+    </script>
+
+</body>
+</html>
