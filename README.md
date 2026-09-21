@@ -19,7 +19,7 @@ This repository contains all academic materials, coursework, assignments, projec
    - Folder: `assignments/calculator/`
 
 ---
-1. **Web Designing Quiz application**
+2. **Web Designing Quiz application**
    - Folder: `assignments/assignment_1/`
 
 ---
