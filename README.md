@@ -19,7 +19,10 @@ This repository contains all academic materials, coursework, assignments, projec
    - Folder: `assignments/calculator/`
 
 ---
+2. **Web Designing Quiz application**
+   - Folder: `assignments/assignment_1/`
 
+---
 ### 🔬 Experiments
 
 1. **Experiment 1: Custom EventEmitter**
