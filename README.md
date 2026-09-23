@@ -23,6 +23,10 @@ This repository contains all academic materials, coursework, assignments, projec
    - Folder: `assignments/assignment_1/`
 
 ---
+3. **Student Activity Monitoring System**
+   - Folder: `assignments/assignment_2/`
+  
+---
 ### 🔬 Experiments
 
 1. **Experiment 1: Custom EventEmitter**
